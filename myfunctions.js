@@ -9,18 +9,23 @@ let pokeArray = [
 let index = 0;
 let secIndex = 1;
 
-function showIt() {
-let button = document.getElementById ('javaFlow'); {
-    button.addEventListener ('click', function (){; 
-    console.log ('click');
-    targetElement.src = pokeArray[index].image;
-    index++;
-    if (index >= pokeArray.length) {
-    index = 0; }
-
 function secondIt() {
     targetElement.src = pokeArray[secIndex].image;
     secIndex++;
     if (secIndex >= pokeArray.length) {
     secIndex = 1; } 
 }
+function showIt() {
+let button = document.getElementById ('javaFlow'); {
+    button.addEventListener ('click', function (){; 
+    console.log ('click');
+    secondIt();
+    targetElement.src = pokeArray[index].image;
+    index++;
+    if (index >= pokeArray.length) {
+    index = 0; }
+
+
+
+
+
